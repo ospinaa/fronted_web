@@ -1,0 +1,94 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #f9f3ee 0%, #f3e7dc 100%);
+  color: #30251e;
+}
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.88);
+  border-bottom: 1px solid #e5d7c8;
+  box-shadow: 0 4px 14px rgba(98, 66, 46, 0.08);
+}
+.brand {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5d3a29;
+}
+nav {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+.nav-link {
+  color: #704629;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+.nav-link:hover {
+  background: #f3e0d0;
+  color: #4d2d1e;
+}
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.home-page {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-card {
+  width: min(100%, 700px);
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid #eadbc6;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 12px 24px rgba(87, 62, 44, 0.08);
+}
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #f9e7d7;
+  color: #7a4d32;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.hero-card h1 {
+  margin: 0 0 0.75rem;
+  color: #3d2b24;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+.hero-card p {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #4c3d36;
+}
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.order-card { padding: 1rem; background: white; border: 1px solid #ddd; border-radius: 8px; }
+.status { display: inline-block; padding: 0.4rem 0.6rem; border-radius: 6px; }
+.pending { background: #fff0c2; color: #6d4600; }
+.ready { background: #d9f0df; color: #215c32; }
+button { font: inherit; padding: 0.6rem 1rem; cursor: pointer; }
+.orders-summary { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
